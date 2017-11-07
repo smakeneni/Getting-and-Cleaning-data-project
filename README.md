@@ -7,4 +7,4 @@ This repository contains the R code and all the necessary files and documentatio
 
 2) The output from the program "tidy_data".txt is also uploaded to this repository
 
-3) CodeBook.md explains the variables,data, and any transformations that were performed to clean up the data 
+3) CodeBook.md explains the variables,data, and any transformations used in the code to clean up the data 
