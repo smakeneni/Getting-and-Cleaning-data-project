@@ -21,9 +21,6 @@ ytest <- read.table(file.path(filename,"test","y_test.txt"))
 subjecttrain <- read.table(file.path(filename,"train","subject_train.txt"))
 subjecttest <- read.table(file.path(filename,"test","subject_test.txt"))
 
-nrow(ytrain)
-nrow(xtrain)
-
 #merging x data
 all_xdata<-rbind(xtrain,xtest)
 
