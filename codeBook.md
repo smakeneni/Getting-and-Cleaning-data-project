@@ -8,7 +8,7 @@ The run_analysis.R program executes all the steps necessary to do the analysis d
 7) In the last step, a new data set called "tidy_text.dat" is generated with all the average measures for each subject and activity type.
 
 
-Variables
+Variables in the script
 
 a) xtrain, ytrain, subjecttrain, xtest, ytest, subjecttest contain the raw data 
 
@@ -23,3 +23,31 @@ e) alldata contains all the merged data from all_xdata,all_ydata, and all_subjec
 
 f) averagesdata contains all the average values which are then used to write out the tidy_data.txt output file. ddply() from the plyr package is
 used to apply colMeans() function to calculate the average values.
+
+
+Variables in the final output(tidy_data.txt)
+
+Contains 180 observations of 81 variables seperated by space
+
+subject : Integer from 1 to 30
+Activity: "walking" "walking upstairs" "walking downstairs" "sitting" "standing" "laying"
+
+Mean and Stddev of the following variables were extracted
+
+tBodyAcc.XYZ
+tGravityAcc.XYZ
+tBodyAccJerk.XYZ
+tBodyGyro.XYZ
+tBodyGyroJerk.XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc.XYZ
+fBodyAccJerk.XYZ
+fBodyGyro.XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
